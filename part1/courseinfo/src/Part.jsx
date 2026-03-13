@@ -1,4 +1,5 @@
 const Part = (props) => {
+  console.log(props)
   const part = props.part
   return (
     <p>
