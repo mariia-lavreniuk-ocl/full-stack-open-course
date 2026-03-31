@@ -1,6 +1,4 @@
-const Part = (props) => {
-  console.log(props)
-  const part = props.part
+const Part = ({part}) => {
   return (
     <p>
       {part.name} {part.exercises}
