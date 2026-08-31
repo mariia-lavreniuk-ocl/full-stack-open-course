@@ -11,6 +11,7 @@ const Statistics = ({ statistics }) => {
         <p>{texts.goodTxt}: {variables.good}</p>
         <p>{texts.neutralTxt}: {variables.neutral}</p>
         <p>{texts.badTxt}: {variables.bad}</p>
+        <p>{texts.allTxt}: {variables.all}</p>
       </div>
     </>
   )

@@ -6,17 +6,20 @@ function App() {
   const [good, setGood] = useState(0)
   const [neutral, setNeutral] = useState(0)
   const [bad, setBad] = useState(0)
+  const [all, setAll] = useState(0)
 
   let texts = {
     goodTxt: 'good',
     neutralTxt: 'neutral',
-    badTxt: 'bad'
+    badTxt: 'bad',
+    allTxt: 'all'
   };
 
   let variables = {
     good: good,
     neutral: neutral,
-    bad: bad
+    bad: bad,
+    all: all
   }
 
   let feedback = {
@@ -24,6 +27,7 @@ function App() {
     setGood,
     setNeutral,
     setBad,
+    setAll,
     variables: variables,
     texts: texts
   };
