@@ -24,12 +24,18 @@ const Statistics = ({ statistics }) => {
     <>
       <Header header={statistics.header} />
       <div>
-        <p>{texts.goodTxt}: {variables.good}</p>
-        <p>{texts.neutralTxt}: {variables.neutral}</p>
-        <p>{texts.badTxt}: {variables.bad}</p>
-        <p>{texts.allTxt}: {allScores}</p>
-        <p>{texts.averageTxt}: {calculateAverage(variables.good, variables.bad, allScores)}</p>
-        <p>{texts.positiveTxt}: {calculatePositive(variables.good, allScores)}</p>
+        {allScores === 0 ? 
+          <p>No feedback given</p>
+        : 
+          <>
+            <p>{texts.goodTxt}: {variables.good}</p>
+            <p>{texts.neutralTxt}: {variables.neutral}</p>
+            <p>{texts.badTxt}: {variables.bad}</p>
+            <p>{texts.allTxt}: {allScores}</p>
+            <p>{texts.averageTxt}: {calculateAverage(variables.good, variables.bad, allScores)}</p>
+            <p>{texts.positiveTxt}: {calculatePositive(variables.good, allScores)}</p>
+          </>
+        }
       </div>
     </>
   )
