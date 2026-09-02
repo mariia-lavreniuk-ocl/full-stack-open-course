@@ -10,13 +10,16 @@ function App() {
   let texts = {
     goodTxt: 'good',
     neutralTxt: 'neutral',
-    badTxt: 'bad'
+    badTxt: 'bad',
+    allTxt: 'all',
+    averageTxt: 'average',
+    positiveTxt: 'positive'
   };
 
   let variables = {
     good: good,
     neutral: neutral,
-    bad: bad
+    bad: bad,
   }
 
   let feedback = {

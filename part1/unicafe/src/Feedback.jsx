@@ -9,7 +9,7 @@ const Feedback = ({ feedback }) => {
     <>
       <Header header={feedback.header} />
       <Button onClick={() => feedback.setGood(variables.good + 1)} text={texts.goodTxt} />
-      <Button onClick={() => feedback.setNeutral(variables.neutral + 1)} text={texts.neutralTxt} />
+      <Button onClick={() => feedback.setNeutral(variables.neutral + 1) } text={texts.neutralTxt} />
       <Button onClick={() => feedback.setBad(variables.bad + 1)} text={texts.badTxt} />
     </>
   )
