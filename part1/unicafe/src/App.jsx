@@ -12,7 +12,8 @@ function App() {
     neutralTxt: 'neutral',
     badTxt: 'bad',
     allTxt: 'all',
-    averageTxt: 'average'
+    averageTxt: 'average',
+    positiveTxt: 'positive'
   };
 
   let variables = {
