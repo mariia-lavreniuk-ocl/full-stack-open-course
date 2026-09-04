@@ -27,6 +27,32 @@ const Statistics = ({ statistics }) => {
           <p>No feedback given</p>
         : 
           <>
+            <table>
+              <tr>
+                <td>{texts.goodTxt}:</td>
+                <td>{variables.good}</td>
+              </tr>
+              <tr>
+                <td>{texts.neutralTxt}:</td>
+                <td>{variables.neutral}</td>
+              </tr>
+              <tr>
+                <td>{texts.badTxt}:</td>
+                <td>{variables.bad}</td>
+              </tr>
+              <tr>
+                <td>{texts.allTxt}:</td>
+                <td>{allScores}</td>
+              </tr>
+              <tr>
+                <td>{texts.averageTxt}:</td>
+                <td>{calculateAverage(variables.good, variables.bad, allScores)}</td>
+              </tr>
+              <tr>
+                <td>{texts.positiveTxt}:</td>
+                <td>{calculatePositive(variables.good, allScores) + '%'}</td>
+              </tr>
+            </table>
             <StatisticLine text={texts.goodTxt} value={variables.good}/>
             <StatisticLine text={texts.neutralTxt} value={variables.neutral}/>
             <StatisticLine text={texts.badTxt} value={variables.bad}/>
